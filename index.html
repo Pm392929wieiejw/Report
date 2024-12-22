@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Report Hate Crime</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f9f9f9;
+    }
+    header {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 1rem 0;
+    }
+    main {
+      padding: 20px;
+      max-width: 600px;
+      margin: auto;
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    h1, h2 {
+      text-align: center;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+    }
+    label {
+      margin-top: 10px;
+      font-weight: bold;
+    }
+    input, textarea {
+      margin-top: 5px;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    button {
+      margin-top: 20px;
+      padding: 10px;
+      background-color: #333;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #555;
+    }
+    footer {
+      margin-top: 20px;
+      text-align: center;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>G-I-M</h1>
+  </header>
+  <main>
+    <h2>Help us take action by reporting incidents</h2>
+    <form action="https://formspree.io/f/YOUR_FORM_ID" method="post">
+      <label for="name">Name (Optional):</label>
+      <input type="text" id="name" name="name" placeholder="Enter your name">
+
+      <label for="contact">Contact Information (Optional):</label>
+      <input type="email" id="contact" name="email" placeholder="Enter your email">
+
+      <label for="location">Location of Incident:</label>
+      <input type="text" id="location" name="location" placeholder="Enter the location">
+
+      <label for="date">Date of Incident:</label>
+      <input type="date" id="date" name="date">
+
+      <label for="description">Description of Incident:</label>
+      <textarea id="description" name="description" rows="5" placeholder="Provide detailed information"></textarea>
+
+      <button type="submit">Submit Report</button>
+    </form>
+  </main>
+  <footer>
+    <p>&copy; 2024 G-I-M. All rights reserved. Your privacy is our priority.</p>
+  </footer>
+</body>
+</html>
